@@ -9,5 +9,6 @@
 ### 1.2 Configurating Linux Web Serevers 
 - I become working with security in unix, managing accounts, learned how to get superuser permission to new user
 - ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/15ba08911476783390fc8a9f0443f0d5afa68a38/task_1/2.%20Configuring%20Linux%20web%20servers.JPG)
-### 1.3
-- Repeat basic knowlage about stack of protocols TCP/IP
+### 1.3 Networking for Web developers
+- Repeat basic knowlage about stack of protocols TCP/IP, don't find new information, maybe because i studied at telecoms in KPI :)
+- ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/master/task_1/3.Networking%20for%20Web%20developers.bmp)
