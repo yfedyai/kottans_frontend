@@ -13,5 +13,6 @@
 - Repeat basic knowlage about stack of protocols TCP/IP, don't find new information, maybe because i studied at telecoms in KPI :)
 - ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/master/task_1/3.Networking%20for%20Web%20developers.bmp)
 ## Task 2
-### Git and GitHub find a new parametrs fot command 'git log'  for detail information about commits. Find new in tags, i think it usefull thing in big projects. Refreshing how to solve merge conflicts.
+### What is Version Control
+Git and GitHub find a new parametrs fot command 'git log'  for detail information about commits. Find new in tags, i think it usefull thing in big projects. Refreshing how to solve merge conflicts.
 New for me : 'git revert' !!
