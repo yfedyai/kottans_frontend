@@ -23,3 +23,6 @@ New for me : 'git revert' !!
 ## Task 3 Intro to HTML and CSS
 - Nice task for beginners, like that right after theory video was different interesting quizzes. I chose very easy in practice text-editor Atom and get experience searching by MDN catalog.
 - ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/master/task_3/Intro%20to%20HTML%20%26%20CSS.jpg)
+## Responsive Web Design Fundamentals
+- I get a biggest knowledge and experience how to do adaptive design for my page. Before the course i didnt know anything about "media screen, breakpoints, viewport". Interesting quizzes helped to strengthen the theory by the practice.
+- ![Screenshot](https://raw.githubusercontent.com/yfedyai/kottans_frontend/master/task_4/Responsive%20Web%20Design%20Fundamentals.bmp)
