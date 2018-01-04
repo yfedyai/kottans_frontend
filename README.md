@@ -22,3 +22,4 @@ New for me : 'git revert' !!
 - ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/master/task_2/2.GitHub%20%26%20Collaboration.bmp)
 ## Task 3 Intro to HTML and CSS
 - Nice task for beginners, like that right after theory video was different interesting quizzes. I chose very easy in practice text-editor Atom and get experience searching by MDN catalog.
+- ![Screenshot](https://github.com/yfedyai/kottans_frontend/blob/master/task_3/Intro%20to%20HTML%20%26%20CSS.jpg)
