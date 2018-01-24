@@ -1,0 +1,170 @@
+
+*::before, *::after {
+	box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+	margin: 0;
+	background-color: #eceef4;
+	color:#9098b8;
+	font-family: 'Proxima Nova', 'Calibri', sans-serif;
+	letter-spacing: 1px;
+}
+
+/*HEADER*/
+
+header {
+	width: 80%;
+	margin: 70px auto;
+}
+
+
+
+header button:first-of-type::before {
+	font-family: 'FontAwesome';
+	margin-right: 15px;
+ 	 content:'\f177';
+}
+
+header button:last-of-type::before {
+	font-family: 'FontAwesome';
+	margin-right: 15px;
+  	content:'\f007';
+}
+
+.click-buttons {
+	font-weight: bold;
+	border:1px solid #c9d0e1;
+	border-radius: 5px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+}
+
+header button {
+	border:none;
+	background:none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #9098b8;
+	margin-top:24px;
+}
+
+
+header button:first-of-type {
+	 float:left; 
+	 margin-right: 345px;
+	
+}
+
+header img {
+	 float:left; 
+}
+header button:last-of-type{
+	float: right;
+}
+
+header img, footer img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+main {
+	width:80%;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #c9d0e1 ;
+	border-radius: 5px;
+}
+
+
+/*ORDER SECTION*/
+
+.oder-title {
+	border-bottom: 1px solid #c9d0e1;
+}
+.your-order{
+	padding-left: 60px;
+	padding-right: 15px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	float:left;
+	border-right: 1px solid #c9d0e1;
+}
+
+.your-order-table{
+	width: 485px;
+	float:left;
+}
+.your-order-buttons{
+	float:left;
+}
+
+h3 {
+	color: #6e768f;
+	margin: 0;
+	position:relative;
+	font-size: .8rem;
+	text-transform: uppercase;
+}
+
+h3::before {
+  content: '\f0ea';
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 1.3rem;
+  left: -35px;
+  font-weight: normal;
+  top: -5px;
+}
+
+table {
+	border-collapse: separate;
+	width: 100%;
+	margin-top: 30px;
+	text-align: left;
+	font-size: .8rem;
+	border-spacing: 0 10px;
+}
+
+th{
+	color: #727895;
+	text-transform: uppercase;
+}
+.place-order-button {
+	
+	color: #fff;
+	background: #5fcac6;
+	width: 100%;
+}
+.print-button{
+	color:#a5abc5;
+	background: #f7f7fa;
+}
+.low-button {
+	margin-top: 15px;
+}
+
+.help-center{
+	float: left;
+	width: 276px;
+	min-height: 109px;
+	
+	padding-left: 60px;
+	padding-right: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: .8rem;
+}
+.help-center h3::before{
+	content:  '\f1cd';
+}
+.help-center address a {
+	font-style: normal;
+	text-decoration: none;
+	color: #727895;
+}
