@@ -77,6 +77,7 @@ main {
 	background-color: #fff;
 	border: 1px solid #c9d0e1 ;
 	border-radius: 5px;
+	counter-reset: heading;
 }
 
 
@@ -362,7 +363,7 @@ h2::before {
 .trash::before {
 	font-family: 'FontAwesome';
 	content: '\f014';
-	font-size: .9rem;
+	/* font-size: .9rem; */
 }
 
 .file-table div:first-child span::before {
@@ -372,4 +373,46 @@ h2::before {
   	margin-right: 15px;
   	position: relative;
   	top: 0px;
+}
+
+/*LANGUAGE SETTINGS*/
+.from-section {
+	display: flex;
+	margin-top:30px;
+}
+select.click-buttons {
+	margin-left: 30px;
+	width: 200px;
+	background-color: #eceef4;
+	color:#9098b8;
+	font-family: 'Proxima Nova', 'Calibri', sans-serif;
+	letter-spacing: 1px;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	background:#f7f7fa url('images/down-arrow.svg') no-repeat  90% center;
+  	text-align: center;
+}
+
+.to-section {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 35px;
+}
+
+.to-section .trash::before {
+	font-size: 2rem;
+}
+
+.to-section .click-buttons {
+margin-left: 20px;
+background-color: #eceef4;color: #9098b8;
+font-family: 'Proxima Nova', 'Calibri', 
+sans-serif;letter-spacing: 1px;
+}
+
+.to-section .click-buttons::before {
+	content: '\f067';
+  	font-family: FontAwesome;
+  	margin-right: 10px;
 }
