@@ -70,20 +70,59 @@
 
 			<!-- CHOOSE TYPE OF DOCUMENT SECTION -->
 			<fieldset class="type-document">
-				<h1>SELECT WHAT YOU WHANT TO TRANSLATE</h1>
+				<h1>select what u whant to translate</h1>
 				<div class="choose-wrapper">
 					<input hidden type="radio" id="website" name="translate">
-					<label for="website" class="" >Website</label>
+					<label for="website" >Website</label>
 
-					<input hidden type="radio" id="documetns" name="translate" >
-					<label for="documetns" class="" >Documents</label>
+					<input hidden type="radio" id="documetns" name="translate" checked >
+					<label for="documetns"  >Documents</label>
 
 					<input hidden type="radio" id="social-account" name="translate" >
-					<label for="social-account" class="" >Social account</label>
-				</div>
-				 
-
+					<label for="social-account" >Social account</label>
+				</div>				
 			</fieldset>
+
+			<!-- UPLOADING DOCUMENTS -->
+			<fieldset class="upload">
+				<h2>Upload your documets <span>(Doc, Docx, txt, PDF, Markdown)</span></h2>
+				<input type="file" name="user-files" id="user-file-id" hidden>
+				<label for="user-file-id" class="">Upload a new file</label>
+				<div class="file-table">
+					<div class="item">
+						<p>file name</p>
+						<span>business_operations.doc</span>
+						<br>
+						<br>
+						<span>business_financial.docx</span>
+					</div>
+					<div class="item">
+						<p>file size</p>
+						<span>78kb</span>
+						<br>
+						<br>
+						
+						<span>26kb</span>
+					</div>
+					<div class="item">
+						<p>number of words</p>
+						<span>842</span>
+						<br>
+						<br>
+						
+						<span>2.362</span>
+					</div><div class="item">
+						<p>remove</p>
+						<span><button type="button" class="trash"></button></span>
+						<br>
+						<br>
+						<span><button type="button" class="trash"></button></span>
+					</div>
+
+					
+				</div>
+			</fieldset>
+
 		</form>
 	</main>
 	<footer></footer>

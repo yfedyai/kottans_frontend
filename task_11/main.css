@@ -84,6 +84,7 @@ main {
 
 .order-section {
 	background-color: #fff;
+	border-bottom: 1px solid #c9d0e1;
 }
 
 .oder-title {
@@ -128,14 +129,16 @@ h3::before {
 	display: inline-block;
 }
 
-.your-order-table .item {
+.your-order-table .item,
+.file-table .item {
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 20px;
 		margin-top: 30px;
 }
 
-.your-order-table .item p {
+.your-order-table .item p,
+.file-table .item p {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #6e768f;
@@ -203,7 +206,7 @@ fieldset {
 	border:none;
 }
 .type-document {
-		text-align: center;	
+	text-align: center;	
 }
 
 h1, h2 {
@@ -252,7 +255,121 @@ button, select, label {
 }
 
 input[type=radio]:checked + label {
-  /* position: relative; */
-  margin: 0;
-  border: 5px solid #76a7e1;
+    position: relative; 
+   border: 5px solid  #76a7e1 ;
+}
+
+input[type=radio]:checked + label::after {
+	content:url('images/checked.svg');
+	position: absolute;
+	top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #76a7e1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+
+/*UPLOADING DOCUMENTS*/
+
+
+h2 {
+  counter-increment: heading;
+}
+
+h2::before {
+  content: counter(heading);
+  position: absolute;
+  left: -3.5rem;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #6e768f;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+
+
+
+
+.upload span {
+	font-size: .9rem;
+	color:#6e768f;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+.upload label{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 15px 30px;
+	border:1px solid #d7d8e0;
+	border-radius: 5px;
+	background-color:#f7f7fa;
+}
+
+.upload label::before {
+	content: '\f0ee';
+	font-family: 'FontAwesome';
+	margin-right: 10px;
+}
+
+
+.file-table {
+	border:1px solid #d7d8e0 ;
+	border-radius: 5px;
+	padding: 20px 60px;
+	margin-top: 30px;
+}
+
+.file-table .item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 90px;
+	/*margin-top: 30px;*/
+}
+
+.file-table div:last-child {
+	margin-right: 0;
+}
+
+.file-table .item p {
+	text-transform: uppercase;
+	font-size: .7rem;
+	color: #6e768f;
+	margin-bottom: 30px;
+}
+.file-table .item span {
+	margin-left: 0;
+	margin-top: 20px;
+	letter-spacing: 
+}
+
+.trash {
+	border: none;
+	background: none;
+	color: #9098b8;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.trash::before {
+	font-family: 'FontAwesome';
+	content: '\f014';
+	font-size: .9rem;
+}
+
+.file-table div:first-child span::before {
+  	content: '\f15c';
+  	font-family: FontAwesome;
+  	font-size: .9rem;
+  	margin-right: 15px;
+  	position: relative;
+  	top: 0px;
 }
