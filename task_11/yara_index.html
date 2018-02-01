@@ -78,7 +78,7 @@
 					<input hidden type="radio" id="documetns" name="translate" checked >
 					<label for="documetns"  >Documents</label>
 
-					<input hidden type="radio" id="social-account" name="translate" >
+					<input hidden type="radio" id="social-account" name="translate">
 					<label for="social-account" >Social account</label>
 				</div>				
 			</fieldset>
@@ -150,6 +150,44 @@
 					<button type="button" class="trash"></button>
 					<button type="button" class="click-buttons">ADD</button>
 
+				</div>
+			</fieldset>
+
+
+
+
+			<!-- SELECET TONE BLOCK AND URGENT BLOCK -->
+			<fieldset>
+				<div class="tone-urgent">
+					<div class="tone-block">
+						<h2>Select your desired tone</h2>
+						<div class="choose-tone">
+							<input type="radio"  name="desired-tone" id="friendly/casual" hidden>
+							<label for="friendly/casual" class="click-buttons">friendly/casual</label>
+
+							<input type="radio"  name="desired-tone" id="corporate" hidden>
+							<label for="corporate" class="click-buttons">corporate/pro</label>
+
+							<input type="radio"  name="desired-tone" id="media/formal" hidden>
+							<label for="media/formal" class="click-buttons">media/formal</label>
+						</div>
+						
+					</div>
+					<div class="urgent-block">
+						<h2>Tell us how urgent this job</h2>
+						<div class="choose-tone">
+							<input type="range" name="urgent" min="-10" max="10" step="5" value="0">
+								<ul>
+            						<li>I got time</li>
+           							 <li><strong>Average</strong></li>
+           							 <li>Yesterday</li>
+         					 	</ul>
+         					 <div class="timeline-info">
+         					 	<h3>timeline info</h3>
+         					 	<p>With an <strong>average</strong> timeline set up, our expert translator can take a reasonable amount of time perfecting tour translation</p>
+         					 </div>
+						</div>
+					</div>
 				</div>
 			</fieldset>
 
