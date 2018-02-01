@@ -70,7 +70,7 @@
 
 			<!-- CHOOSE TYPE OF DOCUMENT SECTION -->
 			<fieldset class="type-document">
-				<h1>select what u whant to translate</h1>
+				<h1>select what u want to translate</h1>
 				<div class="choose-wrapper">
 					<input hidden type="radio" id="website" name="translate">
 					<label for="website" >Website</label>
@@ -190,7 +190,42 @@
 					</div>
 				</div>
 			</fieldset>
+			<fieldset class="payment">
+				<h2>Singing up and choose payment method</h2>
+				<p>Already have an account with us? <a href="#"> Sign in</a>.</p>
+				<div class="personal-info">
+				<label for="full-name">Full Name</label>
+				<input type="text" name="full-name" id="full-name" class="click-buttons" minlength="2" maxlength="15" required>
+				</div>
+				<div class="mail-password">
+					<div class="mail">
+						<label for="mail">Email Adress</label>
+						<input type="text" name="mail" id="mail" class="click-buttons" pattern="[A-Za-z0-9._-]+@[a-z]+\.[a-z]{2,4}$" required> 
+					</div>
+					<div class="password">
+						<label for="password">Choose a Password</label>
+						<input type="password" name="password" id="password" class="click-buttons" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> 						
+					</div>
+				</div>
+				<div class="payment-type">
 
+					<input hidden type="radio" id="visa-master" name="payment" checked>
+					<label for="visa-master" class="click-buttons" ></label>
+
+
+					<input hidden type="radio" id="paypal" name="payment">
+					<label for="paypal" class="click-buttons" ></label>
+					
+					<input hidden type="radio" id="amazon" name="payment">
+					<label for="amazon" class="click-buttons" ></label>
+
+					
+					
+					
+
+				</div>
+
+			</fieldset>
 		</form>
 	</main>
 	<footer></footer>

@@ -37,7 +37,7 @@ header button:last-of-type::before {
 	font-weight: bold;
 	border:1px solid #c9d0e1;
 	border-radius: 5px;
-	padding: 15px 30px;
+	padding: 15px 30px; 
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -247,7 +247,6 @@ button, select, label {
 	border: 1px solid #d7d8e0;
 	border-radius: 5px;
 	background: #f7f7fa url('images/documents.png') no-repeat center 30%/40%;
-	
 }
 
 .choose-wrapper label:last-of-type {
@@ -258,7 +257,14 @@ button, select, label {
 input[type=radio]:checked + label {
     position: relative;
     border: 5px solid  #76a7e1;
+    margin: 0;
 }
+
+input[type=radio] + label {
+    margin: 4px;
+    box-sizing: content-box;
+}
+
 
 input[type=radio]:checked + label::after {
 	content:url('images/checked.svg');
@@ -421,11 +427,13 @@ select.click-buttons {
 
 .tone-urgent {
 	display: flex;
-	
 }
 .tone-block {
 	width: 35%;
 	margin-right: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content:  space-between;
 }
 .urgent-block{
 	width: 60%;
@@ -592,4 +600,69 @@ strong {
 
 .timeline-info p {
 	font-size: .8rem;
+}
+
+.payment a {
+	color :#9098b8;
+
+}
+
+.payment p {
+	margin:40px 0;
+}
+
+.payment label {
+	margin: 0 0 10px 10px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: block;
+
+}
+
+.payment input:invalid {
+	  background: url(images/cross.svg) no-repeat 95% center / 25px;
+}
+
+.payment input:valid {
+	background: url(images/) no-repeat 95% center / 25px;
+
+}
+
+.personal-info input, .mail-password input{
+	width: 235px;
+	color: #727895;
+	font-weight: bold;
+	padding: 15px 40px 15px 15px;
+}
+
+
+.mail-password {
+	width: 650px;
+	display: flex;
+	justify-content: space-between
+	;margin-top: 30px;
+}
+
+/*PAYMENT TYPE */
+
+.payment-type {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.payment-type label {
+
+	width: 140px;
+    height: 70px;
+    background: #f7f7fa url(images/payPal.png) no-repeat center center / 40%;
+}
+
+.payment-type label:first-of-type {
+	 background: #f7f7fa url(images/visa.png) no-repeat center center / 40%;
+}
+
+.payment-type label:last-of-type {
+	 background: #f7f7fa url(images/amazon.png) no-repeat center center / 60%;
 }
