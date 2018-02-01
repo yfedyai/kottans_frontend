@@ -37,7 +37,7 @@ header button:last-of-type::before {
 	font-weight: bold;
 	border:1px solid #c9d0e1;
 	border-radius: 5px;
-	padding: 15px 30px; 
+	padding: 15px 30px;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -624,8 +624,8 @@ strong {
 }
 
 .payment input:valid {
-	background: url(images/) no-repeat 95% center / 25px;
-
+	background: url(images/checkmark.svg) no-repeat 95% center / 25px;
+	/*background: url(images/checkmark.svg) no-repeat 95% center / 25px;*/
 }
 
 .personal-info input, .mail-password input{
