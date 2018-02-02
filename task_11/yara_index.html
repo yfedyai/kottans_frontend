@@ -49,8 +49,8 @@
 					</div>
 					<div class="your-order-buttons ">
 						<div class="top-botton">
-							<button type="button" class="place-order-button click-buttons" >place order
-							</button>
+							<input type="submit" class="place-order-button click-buttons" value="Place Order">
+							</input>
 						</div>
 						<div class="low-button">
 							<button type="button" class="print-button click-buttons " >print a quote
@@ -190,6 +190,9 @@
 					</div>
 				</div>
 			</fieldset>
+
+
+			<!-- PAYMENT SECTION -->
 			<fieldset class="payment">
 				<h2>Singing up and choose payment method</h2>
 				<p>Already have an account with us? <a href="#"> Sign in</a>.</p>
@@ -208,7 +211,6 @@
 					</div>
 				</div>
 				<div class="payment-type">
-
 					<input hidden type="radio" id="visa-master" name="payment" checked>
 					<label for="visa-master" class="click-buttons" ></label>
 
@@ -217,18 +219,59 @@
 					<label for="paypal" class="click-buttons" ></label>
 					
 					<input hidden type="radio" id="amazon" name="payment">
-					<label for="amazon" class="click-buttons" ></label>
-
-					
-					
-					
-
+					<label for="amazon" class="click-buttons" ></label>			
 				</div>
 
+
+				<div class="card-info">
+					<div class="card-number">
+						<label for="nubmer">Card Number</label>
+						<input type="text" name="card-number" id="number" pattern="[0-9]{16}" class="click-buttons" required>
+					</div>
+					<div class="date">
+						<label for="expiry-date">Expiry Date</label>
+						<input type="date" name="expiry-date" id="expiry-date" class="click-buttons" required>	
+					</div>
+					<div class="cvv-code">
+						<label for="cvv">Code</label>
+						<input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" maxlength="3" class="click-buttons">
+					</div>
+				</div>
+				<div class="summary-order">
+					<input type="checkbox" id="checkbox" name="agreement" value="agree" required>
+					<label for="checkbox">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+					<input type="submit" class="place-order-button click-buttons" value="Place Order">
+					</input>
+					<button type="button" class="print-button click-buttons " >print a quote
+					</button>
+				</div>
 			</fieldset>
 		</form>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="what-we-do">
+			<h3>What we do</h3>
+			<p>We provide a full range of language services including content development, document, website and social media accounts translations.</p>
+		</div>
+		<div class="office">
+			<h3>our main office</h3>
+			<ul>
+				<li>Dubai, UAE</li>
+				<li>P.O. Box: 502735</li>			
+				<li>Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a></li>
+			</ul>
+		</div>
+		<div class="contacts">
+			<h3>Connect with us</h3>
+			<ul>
+       			<li><a href="#">Facebbok</a></li>
+        		<li><a href="#">Twitter</a></li>
+        		<li><a href="#">Linkedin</a></li>
+      		</ul>
+		</div>
+		<img src="images/logo_footer.png" alt="">
+		
+	</footer>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

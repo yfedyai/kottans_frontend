@@ -1,5 +1,5 @@
 
-*::before, *::after {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@ header {
 header button:first-of-type::before {
 	font-family: 'FontAwesome';
 	margin-right: 15px;
- 	 content:'\f177';
+ 	content:'\f177';
 }
 
 header button:last-of-type::before {
@@ -116,13 +116,13 @@ h3::before {
 .your-order{
 	display: inline-block;
 	vertical-align: middle;
-	width: 60%;
+	width: 65%;
 	padding: 30px 15px 30px 50px;
 	/*border-right:1px solid #c9d0e1;*/
 }
 .your-order-table {
 	font-size: .8rem;
-	margin-right: 80px;
+	margin-right: 60px;
 }
 
 .your-order-table ,.your-order-buttons {
@@ -147,13 +147,11 @@ h3::before {
 .your-order-buttons{
 	width:167px;
 }
-button.place-order-button {
-	
+input.place-order-button {
 	color: #fff;
 	background: #5fcac6;
 	cursor: pointer;
-	width: 167px;
-
+	width: 165px;
 }
 button.print-button{
 	color:#a5abc5;
@@ -170,7 +168,7 @@ button.print-button{
 	
 }
 .help-center {
-	width: 24%;
+	width: 30%;
 	display: inline-block;
 	vertical-align: middle;
 	font-size: .8rem;
@@ -340,7 +338,7 @@ h2::before {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 90px;
-	margin-top: 30px;
+	margin-top: 0;
 }
 
 .file-table div:last-child {
@@ -613,34 +611,34 @@ strong {
 
 .payment label {
 	margin: 0 0 10px 10px;
-    text-transform: uppercase;
-    font-size: .8rem;
-    display: block;
-
+	text-transform: uppercase;
+	font-size: .8rem;
+	display: block;
 }
 
-.payment input:invalid {
-	  background: url(images/cross.svg) no-repeat 95% center / 25px;
+.personal-info input:invalid, .mail-password input:invalid, .password input:invalid{
+	 background: url(images/cross.svg) no-repeat 95% center / 25px;
 }
 
-.payment input:valid {
+.personal-info input:valid, .mail-password input:valid, .password input:valid{
+	/* background: url(images/checkmark.svg) no-repeat 95% center / 25px; */
 	background: url(images/checkmark.svg) no-repeat 95% center / 25px;
-	/*background: url(images/checkmark.svg) no-repeat 95% center / 25px;*/
 }
 
 .personal-info input, .mail-password input{
-	width: 235px;
+	width: 300px;
 	color: #727895;
 	font-weight: bold;
+	text-transform: none;
 	padding: 15px 40px 15px 15px;
 }
 
 
 .mail-password {
-	width: 650px;
+	width: 700px;
 	display: flex;
-	justify-content: space-between
-	;margin-top: 30px;
+	justify-content: space-between;
+	margin-top: 30px;
 }
 
 /*PAYMENT TYPE */
@@ -666,3 +664,153 @@ strong {
 .payment-type label:last-of-type {
 	 background: #f7f7fa url(images/amazon.png) no-repeat center center / 60%;
 }
+
+.card-info {
+	width: 85%;
+	display: flex;
+	margin-top: 70px;
+	justify-content: space-between;
+}
+
+.card-number input {
+	width: 350px;
+	color: #727895;
+	font-weight: bold;
+	padding: 15px 40px 15px 15px;
+	background:  url(images/visa-grey.png) no-repeat 95% center / 10%;
+}
+
+.date input {
+	width: 200px;
+	height: 47px;	
+	color: #727895;
+    font-weight: bold;
+    padding: 15px 15px 15px 15px;
+}
+
+.cvv-code input {
+	width: 100px;	
+	color: #727895;
+    font-weight: bold;
+    padding: 15px 40px 15px 15px;
+	
+}
+
+/*SUMMARY ORDER*/
+
+.summary-order *:not(a){
+	margin-left: 20px;
+}
+
+.summary-order {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.summary-order label {
+	text-transform: none;
+	margin-bottom: 0;
+}
+
+
+/*FOOTER*/
+
+footer {
+	margin-top: 100px;
+	background-color: #444a62;
+	color:#b3b9d7;
+	padding: 100px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-size: .8rem;
+}
+
+footer div {
+	width: 20%;
+	margin-left: 40px;
+}
+
+footer h3 {
+	color:#c6ccea;
+}
+
+
+footer li{
+	margin-top: 12px;
+	list-style-type: none;
+}
+footer ul {
+	padding: 0;
+}
+
+footer a {
+	color:#b3b9d7;
+	text-decoration: none;
+}
+
+.what-we-do  p {
+	font-style: italic;
+}
+.what-we-do h3::before {
+	content: '\f08a'
+}
+
+.office h3::before {
+	content: '\f14e';
+}
+
+.contacts h3::before {
+	content: '\f1e0';
+}
+
+
+.contacts ul li::before {
+	content: '\f081';
+  	font-family: FontAwesome;
+  	margin-right: 15px;
+}
+
+.contacts ul li:first-child::before {
+	content:'\f082'
+}
+
+.contacts ul li:last-child::before {
+	content: '\f08c'
+}
+
+/*HOOVER EFFECTS*/
+input,button, select, a, {
+	transition: .5s;
+	outline: none;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  background: #fff;
+  color: #5fcac6;
+  border-color: #5fcac6;
+}
+
+select:focus {
+  box-shadow: 0 0 0 2px #76a7e1;
+}
+
+button:hover:not(.trash), 
+button:focus:not(.trash),
+.upload label:hover {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 2px #76a7e1;
+}
+
+select:focus {
+  box-shadow: 0 0 0 2px #76a7e1;
+}
+
+a:hover, a:focus,
+.help-center a:hover, .help-center a:focus,
+.summarty-order a:hover, .summarty-order a:focus,
+.trash:hover, .trash:focus {
+  color: #5fcac6;
+}*/
