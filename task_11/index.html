@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/ProximaNova/fonts.min.css">
+
+	<title>Task11</title>
+</head>
+<body>
+	<header >
+		<div>
+			<button type="button" class="click-buttons">go back</button>
+		</div>
+		<div class="logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<div>
+			<button type="button" class="click-buttons right-button">sign in</button>
+		</div>
+
+	</header>
+	<main>
+		<form action="#" method="post">
+			<!-- ORDER SECTION -->
+			<div class="order-section">
+				<div class="your-order " >
+					<div class="your-order-table ">
+						<h3>your order</h3>
+						<div class="item">
+							<p>items</p>
+							<span>2 documents</span>
+						</div>
+						<div class="item">			
+							<p>details</p>
+							<span>2 langugages</span>
+						</div>	
+						<div class="item">	
+							<p>price</p>
+							<span>$ 696.06</span>
+						</div>	
+						<div class="item">	
+							<p>delivery</p>
+							<span>48 hours*</span>
+						</div>							
+
+					</div>
+					<div class="your-order-buttons ">
+						<div class="top-botton">
+							<input type="submit" class="place-order-button click-buttons" value="Place Order">
+							</input>
+						</div>
+						<div class="low-button">
+							<button type="button" class="print-button click-buttons " >print a quote
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="help-center " >
+					<h3>help center</h3>
+					<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+					<address>
+            			<a href="tel:+971(0)555555">+971(0)555 555</a>
+            			<a href="mailto:help@qtest.com">help@qtest.com</a>
+          			</address>
+				</div>
+			</div>
+
+			<!-- CHOOSE TYPE OF DOCUMENT SECTION -->
+			<fieldset class="type-document">
+				<h1>select what u want to translate</h1>
+				<div class="choose-wrapper">
+					<input hidden type="radio" id="website" name="translate">
+					<label for="website" >Website</label>
+
+					<input hidden type="radio" id="documetns" name="translate" checked >
+					<label for="documetns"  >Documents</label>
+
+					<input hidden type="radio" id="social-account" name="translate">
+					<label for="social-account" >Social account</label>
+				</div>				
+			</fieldset>
+
+			<!-- UPLOADING DOCUMENTS -->
+			<fieldset class="upload">
+				<h2>Upload your documets <span>(Doc, Docx, txt, PDF, Markdown)</span></h2>
+				<input type="file" name="user-files" id="user-file-id" hidden>
+				<label for="user-file-id" class="">Upload a new file</label>
+				<div class="file-table">
+					<div class="item">
+						<p>file name</p>
+						<span>business_operations.doc</span>
+						<br>
+						<br>
+						<span>business_financial.docx</span>
+					</div>
+					<div class="item">
+						<p>file size</p>
+						<span>78kb</span>
+						<br>
+						<br>
+						
+						<span>26kb</span>
+					</div>
+					<div class="item">
+						<p>number of words</p>
+						<span>842</span>
+						<br>
+						<br>
+						
+						<span>2.362</span>
+					</div><div class="item">
+						<p>remove</p>
+						<span><button type="button" class="trash"></button></span>
+						<br>
+						<br>
+						<span><button type="button" class="trash"></button></span>
+					</div>
+				</div>
+			</fieldset>
+
+			<!-- CHOOSE LANGUAGE SECTION -->
+
+			<fieldset>
+				<h2>Choose your languages pairings</h2>
+				<div class="from-section">
+					<p>FROM</p>
+					<select name="language_part1" class="click-buttons">
+						<option value="EN">English</option>
+						<option value="UA">Ukranian</option>
+						<option value="RU">Russian</option>
+					</select>
+				</div>
+				<div class="to-section">
+					<p>TO</p>
+					<select name="language_part2" class="click-buttons" >
+					<option value="Arabic" selected>Arabic</option>
+					<option value="EN">English</option>
+					<option value="UA">Ukranian</option>
+					<option value="RU">Russian</option>
+					</select>
+					<select name="language_part3" class="click-buttons" >
+					<option value="Arabic" selected>Kurdish</option>
+					<option value="EN">English</option>
+					<option value="UA">Ukranian</option>
+					<option value="RU">Russian</option>
+					</select>
+					<button type="button" class="trash"></button>
+					<button type="button" class="click-buttons">ADD</button>
+
+				</div>
+			</fieldset>
+
+
+
+
+			<!-- SELECET TONE BLOCK AND URGENT BLOCK -->
+			<fieldset>
+				<div class="tone-urgent">
+					<div class="tone-block">
+						<h2>Select your desired tone</h2>
+						<div class="choose-tone">
+							<input type="radio"  name="desired-tone" id="friendly/casual" hidden>
+							<label for="friendly/casual" class="click-buttons">friendly/casual</label>
+
+							<input type="radio"  name="desired-tone" id="corporate" hidden>
+							<label for="corporate" class="click-buttons">corporate/pro</label>
+
+							<input type="radio"  name="desired-tone" id="media/formal" hidden>
+							<label for="media/formal" class="click-buttons">media/formal</label>
+						</div>
+						
+					</div>
+					<div class="urgent-block">
+						<h2>Tell us how urgent this job</h2>
+						<div class="choose-tone">
+							<input type="range" name="urgent" min="-10" max="10" step="5" value="0">
+								<ul>
+            						<li>I got time</li>
+           							 <li><strong>Average</strong></li>
+           							 <li>Yesterday</li>
+         					 	</ul>
+         					 <div class="timeline-info">
+         					 	<h3>timeline info</h3>
+         					 	<p>With an <strong>average</strong> timeline set up, our expert translator can take a reasonable amount of time perfecting tour translation</p>
+         					 </div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+
+			<!-- PAYMENT SECTION -->
+			<fieldset class="payment">
+				<h2>Singing up and choose payment method</h2>
+				<p>Already have an account with us? <a href="#"> Sign in</a>.</p>
+				<div class="personal-info">
+				<label for="full-name">Full Name</label>
+				<input type="text" name="full-name" id="full-name" class="click-buttons" minlength="2" maxlength="15" required>
+				</div>
+				<div class="mail-password">
+					<div class="mail">
+						<label for="mail">Email Adress</label>
+						<input type="text" name="mail" id="mail" class="click-buttons" pattern="[A-Za-z0-9._-]+@[a-z]+\.[a-z]{2,4}$" required> 
+					</div>
+					<div class="password">
+						<label for="password">Choose a Password</label>
+						<input type="password" name="password" id="password" class="click-buttons" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> 						
+					</div>
+				</div>
+				<div class="payment-type">
+					<input hidden type="radio" id="visa-master" name="payment" checked>
+					<label for="visa-master" class="click-buttons" ></label>
+
+
+					<input hidden type="radio" id="paypal" name="payment">
+					<label for="paypal" class="click-buttons" ></label>
+					
+					<input hidden type="radio" id="amazon" name="payment">
+					<label for="amazon" class="click-buttons" ></label>			
+				</div>
+
+
+				<div class="card-info">
+					<div class="card-number">
+						<label for="nubmer">Card Number</label>
+						<input type="text" name="card-number" id="number" pattern="[0-9]{16}" class="click-buttons" required>
+					</div>
+					<div class="date">
+						<label for="expiry-date">Expiry Date</label>
+						<input type="date" name="expiry-date" id="expiry-date" class="click-buttons" required>	
+					</div>
+					<div class="cvv-code">
+						<label for="cvv">Code</label>
+						<input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" maxlength="3" class="click-buttons">
+					</div>
+				</div>
+				<div class="summary-order">
+					<input type="checkbox" id="checkbox" name="agreement" value="agree" required>
+					<label for="checkbox">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+					<input type="submit" class="place-order-button click-buttons" value="Place Order">
+					</input>
+					<button type="button" class="print-button click-buttons " >print a quote
+					</button>
+				</div>
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		<div class="what-we-do">
+			<h3>What we do</h3>
+			<p>We provide a full range of language services including content development, document, website and social media accounts translations.</p>
+		</div>
+		<div class="office">
+			<h3>our main office</h3>
+			<ul>
+				<li>Dubai, UAE</li>
+				<li>P.O. Box: 502735</li>			
+				<li>Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a></li>
+			</ul>
+		</div>
+		<div class="contacts">
+			<h3>Connect with us</h3>
+			<ul>
+       			<li><a href="#">Facebbok</a></li>
+        		<li><a href="#">Twitter</a></li>
+        		<li><a href="#">Linkedin</a></li>
+      		</ul>
+		</div>
+		<img src="images/logo_footer.png" alt="">
+		
+	</footer>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
