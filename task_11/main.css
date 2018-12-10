@@ -16,7 +16,6 @@ body {
 header {
 	width: 80%;
 	margin: 70px auto;
-
 }
 
 
@@ -88,9 +87,7 @@ main {
 	border-bottom: 1px solid #c9d0e1;
 }
 
-.oder-title {
-	
-}
+
 
 h3 {
 	color: #6e768f;
@@ -354,7 +351,7 @@ h2::before {
 .file-table .item span {
 	margin-left: 0;
 	margin-top: 20px;
-	letter-spacing: 
+	 
 }
 
 .trash {
@@ -813,4 +810,4 @@ a:hover, a:focus,
 .summarty-order a:hover, .summarty-order a:focus,
 .trash:hover, .trash:focus {
   color: #5fcac6;
-}*/
+}
